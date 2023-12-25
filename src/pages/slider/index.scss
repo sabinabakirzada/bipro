@@ -1,0 +1,54 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  padding: 20rem 0;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  flex-direction: column;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:nth-child(1) {
+    background-image: url("https://preview.colorlib.com/theme/bizpro/images/home/slide-1.jpg");
+  }
+  &:nth-child(2) {
+    background-image: url("https://preview.colorlib.com/theme/bizpro/video/drinkwinecover.jpg");
+  }
+  &:nth-child(3) {
+    background-image: url("https://preview.colorlib.com/theme/bizpro/images/home/slide-2.jpg");
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
